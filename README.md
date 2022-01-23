@@ -4,7 +4,7 @@ Esta modificación del sistema operativo xv6 contiene un planificador modificado
 
 Esta versión trae consigo un programa llamado `lotterytest` en el que se crean 3 procesos con 30, 20 y 10 tickets que ejecutan el mismo programa hasta que uno de ellos termina y mata a los demás procesos. De esta forma se puede comprobar como el planificador **lottery scheduler** se ejecuta correctamente otorgando un mayor número de veces la CPU a los procesos que contienen más tickets.
 
-Para poder ejecutar este xv6 modificado se debe ejecutar el comando `make qemu` desde el directorio en el que se encuentra el fichero **Makefile**.
+Para poder ejecutar este xv6 modificado y simular la arquitectura se debe ejecutar el comando `make qemu` desde el directorio en el que se encuentra el fichero **Makefile**.
 
 -------------------------------------------------
 
@@ -14,4 +14,4 @@ This modification of the xv6 operating system contains a modified scheduler call
 
 This version brings with it a program called `lotterytest` in which 3 processes with 30, 20 and 10 tickets are created and execute the same program until one of them terminates and kills the other processes. In this way it is possible to check how the **lottery scheduler** is executed correctly granting a greater number of times the CPU to the processes that contain more tickets.
 
-In order to run this modified xv6 you must run the `make qemu` command from the directory where the **Makefile** file is located.
+In order to run this modified xv6 and simulate the architecture you must run the `make qemu` command from the directory where the **Makefile** file is located.
