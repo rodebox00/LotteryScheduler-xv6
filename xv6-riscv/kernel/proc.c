@@ -329,7 +329,7 @@ fork(void)
   release(&np->lock);
 
   acquire(&np->lock); 
-  p->ticks = 0;   //Set ticks value to 0
+  np->ticks = 0;   //Set ticks value to 0
   release(&np->lock);
 
   return pid;
