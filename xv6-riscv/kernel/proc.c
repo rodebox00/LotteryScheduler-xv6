@@ -713,6 +713,8 @@ procdump(void)
   
 }
 
+//Set a number of tickets to a process
+// and update the global array of processes
 void
 settickets(int n){
   struct proc *p;
@@ -727,13 +729,9 @@ settickets(int n){
     }
     i++;
   }
-
-  i=0;
-  for(p = proc; p < &proc[NPROC]; p++) {
-    i=i+p->tickets;
-  }  
 }
 
+//Return data of all processes being executed
 int 
 getpinfo(uint64 *addr){
   struct pstat estado;
